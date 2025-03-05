@@ -6,6 +6,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhotoController;
+
+Route::resource('photos', PhotoController::class);
 
 Route::get('/hello', [WelcomeController::class, 'hello']);
 
